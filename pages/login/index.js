@@ -91,7 +91,7 @@ Page({
 	signIn(cb) {
 		if (App.WxService.getStorageSync('token')) return
 		App.HttpService.signIn({
-			username: 'admin', 
+			name: 'admin', 
 			password: '123456', 
 		})
 		.then(res => {
